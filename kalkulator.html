@@ -12,6 +12,7 @@
   <select id="operator">
     <option value="add">+</option>
     <option value="subtract">-</option>
+    <option value="multiply">*</option>
   </select>
   <input type="number" id="num2">
   <button onclick="calculate()">Kalkulasi</button>
@@ -34,6 +35,9 @@
         break;
       case 'subtract':
         result = num1 - num2;
+        break;
+      case 'multiply':
+        result = num1 * num2;
         break;
     }
 
